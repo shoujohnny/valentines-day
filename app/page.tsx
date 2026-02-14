@@ -9,7 +9,7 @@ import confetti from "canvas-confetti";
 export default function ValentinePage() {
   const [accepted, setAccepted] = useState(false);
   const [noPosition, setNoPosition] = useState({ x: 0, y: 0 });
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     if (accepted) {
